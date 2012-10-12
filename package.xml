@@ -1,0 +1,31 @@
+<package>
+  <name>filters</name>
+  <version>1.6.0</version>
+  <description>This library provides a standardized interface for processing data as a sequence 
+of filters.  This package contains a base class upon which to build specific implementations
+as well as an interface which dynamically loads filters based on runtime parameters.</description>
+  <!-- <maintainer email="tfoote@willowgarage.com">Tully Foote</maintainer> -->
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/filters</url>
+  <url type="bugtracker"></url>
+
+  <author email="tfoote@willowgarage.com">Tully Foote</author>
+
+  <!-- <build_depend>rosconsole</build_depend> -->
+  <!-- <build_depend>roscpp</build_depend> -->
+  <!-- <build_depend>pluginlib</build_depend> -->
+  <!-- <run_depend>rosconsole</run_depend> -->
+  <!-- <run_depend>roscpp</run_depend> -->
+  <!-- <run_depend>pluginlib</run_depend> -->
+  <!-- <test_depend>rosconsole</test_depend> -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>pluginlib</test_depend> -->
+
+  <export>
+    <cpp lflags="" cflags="-I${prefix}/include `rosboost-cfg --cflags`"/>
+    <filters plugin="${prefix}/default_plugins.xml"/>
+    <architecture_independent/>
+  </export>
+</package>

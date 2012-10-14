@@ -18,7 +18,6 @@ as well as an interface which dynamically loads filters based on runtime paramet
   <build_depend>pluginlib</build_depend>
 
   <export>
-    <cpp lflags="" cflags="-I${prefix}/include `rosboost-cfg --cflags`"/>
     <filters plugin="${prefix}/default_plugins.xml"/>
     <architecture_independent/>
   </export>

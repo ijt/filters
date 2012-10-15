@@ -1,11 +1,16 @@
 # http://ros.org/doc/groovy/api/catkin/html/user_guide/supposed.html
 cmake_minimum_required(VERSION 2.8.3)
 project(filters)
-find_package(catkin REQUIRED COMPONENTS rostest)
+find_package(catkin REQUIRED COMPONENTS rostest pluginlib)
 
 catkin_package(
    INCLUDE_DIRS include
-   LIBRARIES ${PROJECT_NAME})
+   LIBRARIES ${PROJECT_NAME}
+   DEPENDS pluginlib)
+
+include_directories(include
+    ${Boost_INCLUDE_DIR}
+    ${catkin_INCLUDE_DIRS})
 
 #Plugins
 add_library(mean src/mean.cpp)

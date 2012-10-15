@@ -49,3 +49,4 @@ target_link_libraries(chain_test ${Boost_LIBRARIES})
 
 # Test reltime safe buffer class
 add_gtest(realtime_buffer_test EXCLUDE_FROM_ALL test/test_realtime_circular_buffer.cpp)
+

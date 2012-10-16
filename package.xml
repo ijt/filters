@@ -13,6 +13,7 @@ as well as an interface which dynamically loads filters based on runtime paramet
 
   <author email="tfoote@willowgarage.com">Tully Foote</author>
 
+  <build_depend>catkin</build_depend>
   <build_depend>rosconsole</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>pluginlib</build_depend>
@@ -22,6 +23,5 @@ as well as an interface which dynamically loads filters based on runtime paramet
 
   <export>
     <filters plugin="${prefix}/default_plugins.xml"/>
-    <architecture_independent/>
   </export>
 </package>
